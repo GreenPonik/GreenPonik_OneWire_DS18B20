@@ -29,17 +29,6 @@ from GreenPonik_OneWire_DS18B20 import GreenPonik_OneWire_DS18B20
 ## Methods
 
 ```python
-
-"""
-Find the OneWire file with temperature value
-"""
-def find_1w_sensor():
-
-"""
-Get the raw temperature value
-"""
-def temp_raw():
-
 """
 Get temperatues in celcius and fahrenheit
 """
@@ -57,9 +46,9 @@ from GreenPonik_OneWire_DS18B20 import GreenPonik_OneWire_DS18B20
 if __name__ == "__main__":
     while True:
         # read both celcius and fahrenheit temperatures
-        temps = GreenPonik_OneWire_DS18B20.read_temps()
-        print("celcius temp %.3f" %temp[0])
-        print("fahrenheit temp %.3f" %temp[1])
+        temperatures = GreenPonik_OneWire_DS18B20.read_temps()
+        print("celcius temp %.3f" % temperatures[0])
+        print("fahrenheit temp %.3f" % temperatures[1])
         time.sleep(1)
     pass
 

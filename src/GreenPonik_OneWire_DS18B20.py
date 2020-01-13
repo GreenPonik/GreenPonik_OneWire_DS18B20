@@ -27,7 +27,7 @@ class GreenPonik_OneWire_DS18B20():
             print('w1 file not found wait 30sec an retry')
             time.sleep(30)
             # relaunch script
-            os.sys.exit(1)
+            self.find_1w_sensor()
         else:
             for file in files:
                 print("one wire file found: %s" % file)
@@ -55,8 +55,4 @@ class GreenPonik_OneWire_DS18B20():
             temp_string = lines[1].strip()[temp_output+2:]
             temp_c = float(temp_string)/1000.0
             temp_f = temp_c * 9.0 / 5.0 + 32.0
-            temperatures = temp_c, temp_f
-            # return temperature celcius and fahrenheit
-            print('celcius temperature: %0.2f °C' % temperatures[0])
-            print('fahrenheit temperature: %0.2f °C' % temperatures[1])
-            return temperatures
+            return temp_c, temp_f
