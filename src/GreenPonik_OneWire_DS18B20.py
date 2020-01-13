@@ -63,5 +63,7 @@ def read_temps():
 
 
 if __name__ == "__main__":
-    read_temps()
+    while True:
+        read_temps()
+        time.sleep(1)
     pass

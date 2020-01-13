@@ -1,6 +1,10 @@
 ## GreenPonik_OneWire_DS18B20.py Library for Raspberry pi
 ---------------------------------------------------------
-This is the sample code for read temperature with DS18B20 sensor
+This is the sample code for read temperature with DS18B20 sensor on One Wire bus.
+
+The script auto-detect the 1W file and parse it to find the temperature value.
+
+
 ## Table of Contents
 
 - [## GreenPonik_OneWire_DS18B20.py Library for Raspberry pi](#GreenPonikOneWireDS18B20py-library-for-raspberry-pi)
@@ -101,7 +105,9 @@ def read_temps():
 
 
 if __name__ == "__main__":
-    read_temps()
+    while True:
+        read_temps()
+        time.sleep(1)
     pass
 
 ```
