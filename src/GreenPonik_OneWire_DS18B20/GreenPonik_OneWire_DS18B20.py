@@ -20,7 +20,7 @@ ONE_WIRE_PATH = '/sys/bus/w1/devices/'
 
 
 class GreenPonik_OneWire_DS18B20:
-    def find_1w_sensor(self):
+    def __find_1w_sensor(self):
         files = [name for name in os.listdir(ONE_WIRE_PATH)]
         # if file not create wait 30sec an retry
         if(len(files) == 0):
