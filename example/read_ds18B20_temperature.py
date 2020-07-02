@@ -8,4 +8,3 @@ if __name__ == "__main__":
         print("celcius temp %.3f" % temperatures[0])
         print("fahrenheit temp %.3f" % temperatures[1])
         time.sleep(1)
-    pass
