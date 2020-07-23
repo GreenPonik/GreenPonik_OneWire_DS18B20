@@ -24,7 +24,7 @@ setup(
     version=load_version(),
     author="GreenPonik SAS",
     author_email="contact@greenponik.com",
-    description="GreenPonik DS198B20 One Wire read temperature",
+    description="Read DS18B20 OneWire through Python3 on raspberry pi",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/GreenPonik/GreenPonik_OneWire_DS18B20",
