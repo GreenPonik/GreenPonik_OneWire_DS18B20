@@ -29,6 +29,10 @@ The script auto-detect the 1W file and parse it to find the temperature value.
 ## Installation
 ```shell
 > git clone https://github.com/GreenPonik/GreenPonik_OneWire_DS18B20.git
+
+or 
+
+> pip install greenponik-onewire-ds18b20
 ```
 ```Python
 
