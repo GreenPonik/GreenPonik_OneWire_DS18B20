@@ -1,10 +1,11 @@
-
-import os
 from setuptools import setup, find_packages
+import os
+import pathlib
 
+here = pathlib.Path(__file__).parent.resolve()
 
-def here(filename):
-    return os.path.join(os.path.dirname(__file__), filename)
+# Get the long description from the README file
+long_description = (here / 'README.md').read_text(encoding='utf-8')
 
 
 def load_version():
@@ -16,21 +17,28 @@ def load_version():
     return version["__version__"]
 
 
-def long_description():
-    with open("readme.md", "r") as fd:
-        return fd.read()
-
-
 setup(
     name="greenponik-onewire-ds18b20",
-    description="GreenPonik DS198B20 One Wire read temperature",
-    url="https://github.com/GreenPonik/GreenPonik_OneWire_DS18B20",
+    version=load_version(),
     author="GreenPonik SAS",
     author_email="contact@greenponik.com",
-    package_dir={"": "src"},
-    packages=find_packages(),
-    python_requires=">=3.6",
-    version=load_version(),
-    long_description=long_description(),
+    description="GreenPonik DS198B20 One Wire read temperature",
+    long_description=long_description,
     long_description_content_type="text/markdown",
+    url="https://github.com/GreenPonik/GreenPonik_OneWire_DS18B20",
+    license="MIT",
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    package_dir={"": "src"},
+    packages=find_packages(where='src'),  # Required
+    python_requires=">=3.6",
+    project_urls={  # Optional
+        'Source': 'https://github.com/GreenPonik/GreenPonik_OneWire_DS18B20/',
+        'Bug Reports': 'https://github.com/GreenPonik/GreenPonik_OneWire_DS18B20/issues',
+    },
+    keywords="GreenPonik hydroponics DS18B20 OneWire 1Wire temperature reader python hardware diy iot raspberry pi",
+    py_modules=["GreenPonik_OneWire_DS18B20"],
 )
