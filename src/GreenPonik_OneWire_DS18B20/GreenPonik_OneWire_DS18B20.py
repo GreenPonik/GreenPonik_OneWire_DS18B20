@@ -18,7 +18,6 @@ os.system('modprobe w1-therm')
 ONE_WIRE_PATH = '/sys/bus/w1/devices/'
 
 
-# class GreenPonik_OneWire_DS18B20:
 def __find_1w_sensor(self):
     files = [name for name in os.listdir(ONE_WIRE_PATH)]
     # if file not create wait 30sec an retry
