@@ -22,7 +22,7 @@ The script auto-detect the 1W file and parse it to find the temperature value.
 ```
 ```Python
 
-from GreenPonik_OneWire_DS18B20 import GreenPonik_OneWire_DS18B20
+from GreenPonik_OneWire_DS18B20.GreenPonik_OneWire_DS18B20 import read_temps
 
 ```
 
@@ -41,7 +41,7 @@ def read_temps():
 
 ```Python
 import time
-from GreenPonik_OneWire_DS18B20 import read_temps
+from GreenPonik_OneWire_DS18B20.GreenPonik_OneWire_DS18B20 import read_temps
 
 if __name__ == "__main__":
     while True:

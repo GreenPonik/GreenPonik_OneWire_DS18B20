@@ -1,5 +1,5 @@
 import time
-from GreenPonik_OneWire_DS18B20 import read_temps
+from GreenPonik_OneWire_DS18B20.GreenPonik_OneWire_DS18B20 import read_temps
 
 if __name__ == "__main__":
     while True:
