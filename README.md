@@ -1,3 +1,13 @@
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=GreenPonik_GreenPonik_OneWire_DS18B20&metric=alert_status)](https://sonarcloud.io/dashboard?id=GreenPonik_GreenPonik_OneWire_DS18B20)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=GreenPonik_GreenPonik_OneWire_DS18B20&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=GreenPonik_GreenPonik_OneWire_DS18B20)
+
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=GreenPonik_GreenPonik_OneWire_DS18B20&metric=ncloc)](https://sonarcloud.io/dashboard?id=GreenPonik_GreenPonik_OneWire_DS18B20)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=GreenPonik_GreenPonik_OneWire_DS18B20&metric=duplicated_lines_density)](https://sonarcloud.io/dashboard?id=GreenPonik_GreenPonik_OneWire_DS18B20)
+
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=GreenPonik_GreenPonik_OneWire_DS18B20&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=GreenPonik_GreenPonik_OneWire_DS18B20)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=GreenPonik_GreenPonik_OneWire_DS18B20&metric=security_rating)](https://sonarcloud.io/dashboard?id=GreenPonik_GreenPonik_OneWire_DS18B20)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=GreenPonik_GreenPonik_OneWire_DS18B20&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=GreenPonik_GreenPonik_OneWire_DS18B20)
+
 ## GreenPonik_OneWire_DS18B20.py Library for Raspberry pi
 ---------------------------------------------------------
 This is the sample code for read temperature with DS18B20 sensor on One Wire bus.
