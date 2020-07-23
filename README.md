@@ -29,10 +29,12 @@ The script auto-detect the 1W file and parse it to find the temperature value.
 ## Installation
 ```shell
 > git clone https://github.com/GreenPonik/GreenPonik_OneWire_DS18B20.git
+cd GreenPonik_OneWire_DS18B20
+pip3 install -r requirements.txt
 
 or 
 
-> pip install greenponik-onewire-ds18b20
+> pip3 install greenponik-onewire-ds18b20
 ```
 ```Python
 
@@ -64,7 +66,6 @@ if __name__ == "__main__":
         print("celcius temp %.3f" % temperatures[0])
         print("fahrenheit temp %.3f" % temperatures[1])
         time.sleep(1)
-    pass
 
 ```
 
