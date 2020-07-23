@@ -1,4 +1,4 @@
-
+greenponik-onewire-ds18b20==0.01
 tox==3.18.0
 twine==3.2.0
 pytest==5.4.3
