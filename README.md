@@ -8,6 +8,10 @@
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=GreenPonik_GreenPonik_OneWire_DS18B20&metric=security_rating)](https://sonarcloud.io/dashboard?id=GreenPonik_GreenPonik_OneWire_DS18B20)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=GreenPonik_GreenPonik_OneWire_DS18B20&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=GreenPonik_GreenPonik_OneWire_DS18B20)
 
+
+![Upload Python Package](https://github.com/GreenPonik/GreenPonik_OneWire_DS18B20/workflows/Upload%20Python%20Package/badge.svg?event=release)
+
+
 ## GreenPonik_OneWire_DS18B20.py Library for Raspberry pi
 ---------------------------------------------------------
 This is the sample code for read temperature with DS18B20 sensor on One Wire bus.
@@ -23,8 +27,7 @@ The script auto-detect the 1W file and parse it to find the temperature value.
 - [Methods](#methods)
 - [Examples](#examples)
 - [Credits](#credits)
-<snippet>
-<content>
+
 
 ## Installation
 ```shell
