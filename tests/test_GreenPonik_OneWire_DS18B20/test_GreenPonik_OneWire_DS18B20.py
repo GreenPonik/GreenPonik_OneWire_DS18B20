@@ -4,7 +4,7 @@
 
 import unittest
 
-from GreenPonik_OneWire_DS18B20.GreenPonik_OneWire_DS18B20 import read_temps
+from GreenPonik_OneWire_DS18B20 import read_temps
 
 
 class TestGreenPonik_OneWire_DS18B20(unittest.TestCase):
