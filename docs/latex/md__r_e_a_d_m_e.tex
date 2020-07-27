@@ -1,0 +1,62 @@
+\href{https://sonarcloud.io/dashboard?id=GreenPonik_GreenPonik_OneWire_DS18B20}{\texttt{ }} \href{https://sonarcloud.io/dashboard?id=GreenPonik_GreenPonik_OneWire_DS18B20}{\texttt{ }}
+
+\href{https://sonarcloud.io/dashboard?id=GreenPonik_GreenPonik_OneWire_DS18B20}{\texttt{ }} \href{https://sonarcloud.io/dashboard?id=GreenPonik_GreenPonik_OneWire_DS18B20}{\texttt{ }}
+
+\href{https://sonarcloud.io/dashboard?id=GreenPonik_GreenPonik_OneWire_DS18B20}{\texttt{ }} \href{https://sonarcloud.io/dashboard?id=GreenPonik_GreenPonik_OneWire_DS18B20}{\texttt{ }} \href{https://sonarcloud.io/dashboard?id=GreenPonik_GreenPonik_OneWire_DS18B20}{\texttt{ }}
+
+\hypertarget{md__r_e_a_d_m_e_autotoc_md0}{}\doxysubsection{\#\# Green\+Ponik\+\_\+\+One\+Wire\+\_\+\+D\+S18\+B20.\+py Library for Raspberry pi}\label{md__r_e_a_d_m_e_autotoc_md0}
+This is the sample code for read temperature with D\+S18\+B20 sensor on One Wire bus.
+
+The script auto-\/detect the 1W file and parse it to find the temperature value.\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysubsection{Table of Contents}\label{md__r_e_a_d_m_e_autotoc_md1}
+
+\begin{DoxyItemize}
+\item \href{\#GreenPonikOneWireDS18B20py-library-for-raspberry-pi}{\texttt{ Green\+Ponik\+\_\+\+One\+Wire\+\_\+\+D\+S18\+B20.\+py Library for Raspberry pi}}
+\item \href{\#table-of-contents}{\texttt{ Table of Contents}}
+\item \href{\#installation}{\texttt{ Installation}}
+\item \href{\#methods}{\texttt{ Methods}}
+\item \href{\#examples}{\texttt{ Examples}}
+\item \href{\#credits}{\texttt{ Credits}}
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysubsection{Installation}\label{md__r_e_a_d_m_e_autotoc_md2}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{> git clone https://github.com/GreenPonik/GreenPonik\_OneWire\_DS18B20.git}
+\DoxyCodeLine{cd GreenPonik\_OneWire\_DS18B20}
+\DoxyCodeLine{pip3 install -\/r requirements.txt}
+\DoxyCodeLine{}
+\DoxyCodeLine{or }
+\DoxyCodeLine{}
+\DoxyCodeLine{> pip3 install greenponik-\/onewire-\/ds18b20}
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{from GreenPonik\_OneWire\_DS18B20 import read\_temps}
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysubsection{Methods}\label{md__r_e_a_d_m_e_autotoc_md3}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{"""}
+\DoxyCodeLine{Get temperatues in celcius and fahrenheit}
+\DoxyCodeLine{"""}
+\DoxyCodeLine{def read\_temps():}
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysubsection{Example}\label{md__r_e_a_d_m_e_autotoc_md4}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{from time import sleep}
+\DoxyCodeLine{from GreenPonik\_OneWire\_DS18B20 import read\_temps}
+\DoxyCodeLine{}
+\DoxyCodeLine{if \_\_name\_\_ == "\_\_main\_\_":}
+\DoxyCodeLine{    try:}
+\DoxyCodeLine{        while True:}
+\DoxyCodeLine{            \# read both celcius and fahrenheit temperatures}
+\DoxyCodeLine{            temperatures = read\_temps()}
+\DoxyCodeLine{            print("celcius temp \%.3f" \% temperatures[0])}
+\DoxyCodeLine{            print("fahrenheit temp \%.3f" \% temperatures[1])}
+\DoxyCodeLine{            sleep(1)}
+\DoxyCodeLine{    except Exception as e:}
+\DoxyCodeLine{        print("Exception occured", e)}
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxysubsection{Credits}\label{md__r_e_a_d_m_e_autotoc_md5}
+Write by Mickael Lehoux, from \href{https://www.greenponik.com}{\texttt{ Green\+Ponik}}, 2019 
