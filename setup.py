@@ -10,7 +10,7 @@ long_description = (here / 'README.md').read_text(encoding='utf-8')
 
 def load_version():
     version_file = os.path.join(os.path.dirname(
-        __file__), "src/", "version.py")
+        __file__), "GreenPonik_OneWire_DS18B20", "version.py")
     version = {}
     with open(version_file) as fd:
         exec(fd.read(), version)
@@ -32,13 +32,12 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    packages=find_packages(where='src'),  # Required
-    package_dir={"": "src"},
-    python_requires=">=3.6",
+    packages=find_packages(),  # Required
+    python_requires=">=3.7",
     project_urls={  # Optional
         'Source': 'https://github.com/GreenPonik/GreenPonik_OneWire_DS18B20/',
         'Bug Reports': 'https://github.com/GreenPonik/GreenPonik_OneWire_DS18B20/issues',
     },
     keywords="GreenPonik hydroponics DS18B20 OneWire 1Wire temperature reader python hardware diy iot raspberry pi",
-    py_modules=["GreenPonik_OneWire_DS18B20"],
+    # py_modules=["GreenPonik_OneWire_DS18B20"],
 )
