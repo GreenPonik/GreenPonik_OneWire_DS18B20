@@ -4,13 +4,13 @@
 
 import unittest
 
-from GreenPonik_OneWire_DS18B20 import read_temps
+from GreenPonik_OneWire_DS18B20.GreenPonik_OneWire_DS18B20 import read_temps
 
 
 class TestGreenPonik_OneWire_DS18B20(unittest.TestCase):
 
     def test_read_temps(self):
-        self.assertListEqual(read_temps())
+        self.assertTrue(self, type(read_temps()).__name__ == "list")
 
 
 if __name__ == '__main__':
